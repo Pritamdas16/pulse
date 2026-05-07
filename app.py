@@ -12,7 +12,7 @@ st.title("📱 PhonePe Transaction Insights Dashboard")
 st.markdown("Analysis of PhonePe transactions from 2018 to 2024")
 
 # loading data
-base_path = r"C:\Users\pd413\pulse\data"
+base_path = os.path.join(os.path.dirname(__file__), "data")
 
 @st.cache_data
 def load_agg_transaction():
